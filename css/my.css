@@ -354,3 +354,18 @@ footer {
     content: counters(li,".") ". ";
     padding: 0;
 }
+
+.box-label {
+    color: #fff;
+    font-family: Sarala,sans-serif;
+    font-weight: 700;
+    background-color: #615f5f;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.box-label-md {
+    font-size: 13px;
+    padding: 9px 18px;
+    letter-spacing: 1.5px;
+}
