@@ -96,8 +96,29 @@
     background-attachment: scroll;
     background-size: cover;
 }
-
+.ruleshead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 20rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../images/art1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
 .masthead h1 {
+    font-family: 'Varela Round';
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.ruleshead h1 {
     font-family: 'Varela Round';
     font-size: 2.5rem;
     line-height: 2.5rem;
@@ -112,8 +133,17 @@
     font-size: 1rem;
 }
 
+.ruleshead h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+}
+
 @media (min-width: 768px) {
     .masthead h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    .ruleshead h1 {
         font-size: 4rem;
         line-height: 4rem;
     }
@@ -130,6 +160,19 @@
         letter-spacing: 0.8rem;
     }
     .masthead h2 {
+        max-width: 30rem;
+        font-size: 1.25rem;
+    }
+    .ruleshead {
+        height: 25rem;
+        padding: 0;
+    }
+    .ruleshead h1 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.8rem;
+    }
+    .ruleshead h2 {
         max-width: 30rem;
         font-size: 1.25rem;
     }
@@ -294,4 +337,20 @@ a:focus, a:hover {
 
 footer {
     padding: 5rem 0;
+}
+
+#rules ol {
+    /* убираем стандартную нумерацию */
+    list-style: none;
+    /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
+    counter-reset: li;
+    font-family: 'Play';
+    padding: 0;
+}
+#rules li:before {
+    /* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+    counter-increment: li;
+    /* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
+    content: counters(li,".") ". ";
+    padding: 0;
 }
