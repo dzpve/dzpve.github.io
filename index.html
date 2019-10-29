@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
@@ -33,7 +33,6 @@
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/1000logo.png" height="56px;"></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
                 <i class="fa fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -55,46 +54,56 @@
         </div>
     </nav>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-<!--    <ol class="carousel-indicators">-->
-<!--        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
-<!--        <li data-target="#myCarousel" data-slide-to="1" class=""></li>-->
-<!--    </ol>-->
-    <div class="carousel-inner">
-        <div class="carousel-item active" style="background-image: url('images/art2.jpg');">
-<!--            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>-->
-            <div class="container dark">
-                <div class="carousel-caption text-left">
-                    <h1>DURA LEX SED LEX</h1>
-                    <p>Попадая в незнакомое тебе сообщество, легко нарушить сложившиеся трации или правила. Чтобы потом не обижаться, за то что тебя наказали или вовсе изгнали, советуем начать с изучения наших простых правил</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Читать правила</a></p>
-                    <small>* закон суров, но это закон</small>
-                </div>
+<!--        <div id="myCarousel" class="carousel slide" data-ride="carousel">-->
+<!--            &lt;!&ndash;    <ol class="carousel-indicators">&ndash;&gt;-->
+<!--            &lt;!&ndash;        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>&ndash;&gt;-->
+<!--            &lt;!&ndash;        <li data-target="#myCarousel" data-slide-to="1" class=""></li>&ndash;&gt;-->
+<!--            &lt;!&ndash;    </ol>&ndash;&gt;-->
+<!--            <div class="carousel-inner">-->
+<!--                <div class="carousel-item active" style="background-image: url('images/art2.jpg');">-->
+<!--                    &lt;!&ndash;            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>&ndash;&gt;-->
+<!--                    <div class="container dark">-->
+<!--                        <div class="carousel-caption text-left">-->
+<!--                            <h1>DURA LEX SED LEX</h1>-->
+<!--                            <p>Попадая в незнакомое тебе сообщество, легко нарушить сложившиеся трации или правила. Чтобы потом не обижаться, за то что тебя наказали или вовсе изгнали, советуем начать с изучения наших простых правил</p>-->
+<!--                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Читать правила</a></p>-->
+<!--                            <small>* закон суров, но это закон</small>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash;        <div class="carousel-item">&ndash;&gt;-->
+<!--                &lt;!&ndash;            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>&ndash;&gt;-->
+<!--                &lt;!&ndash;            <div class="container">&ndash;&gt;-->
+<!--                &lt;!&ndash;                <div class="carousel-caption">&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <h1>Another example headline.</h1>&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </div>&ndash;&gt;-->
+<!--                &lt;!&ndash;            </div>&ndash;&gt;-->
+<!--                &lt;!&ndash;        </div>&ndash;&gt;-->
+<!--            </div>-->
+<!--            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">-->
+<!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--                <span class="sr-only">Previous</span>-->
+<!--            </a>-->
+<!--            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">-->
+<!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--                <span class="sr-only">Next</span>-->
+<!--            </a>-->
+<!--        </div>-->
+    <header class="masthead">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                <h1 class="mx-auto my-0 text-uppercase">DURA LEX SED LEX</h1>
+                <p class="text-left text-white-50 mx-auto mt-2 mb-5">Попадая в незнакомое тебе сообщество, легко нарушить сложившиеся трации или правила. Чтобы потом не обижаться, за то что тебя наказали или вовсе изгнали, советуем начать с изучения наших простых правил</p>
+                <p class="text-left text-uppercase"><small class="text-white-50 mx-auto mt-2 mb-5">* закон суров, но это закон</small></p>
+                <a href="#about" class="btn btn-primary js-scroll-trigger">Читать правила</a>
+
             </div>
         </div>
-<!--        <div class="carousel-item">-->
-<!--            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>-->
-<!--            <div class="container">-->
-<!--                <div class="carousel-caption">-->
-<!--                    <h1>Another example headline.</h1>-->
-<!--                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
-<!--                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-    </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-<!--    <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #47533e; text-align: right;">-->
-<!--        <a class="navbar-brand" href="#"><img src="images/1000logo.png" height="72px;"></a>-->
-<!--    </nav>-->
+    </header>
+
+
     <div class="container">
 
     </div>
