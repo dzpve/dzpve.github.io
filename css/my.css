@@ -551,6 +551,7 @@ code {
     color: white;
 }
 
+
 .footer-info {
     padding: 50px 10px 27px;
     background-color: #000;
@@ -580,3 +581,11 @@ code {
     color: #888787;
 }
 
+@media (max-width: 414px) {
+    .footer-social {
+        display: none;
+    }
+    .footer-info__logos {
+        display: none;
+    }
+}
