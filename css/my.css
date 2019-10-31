@@ -379,6 +379,13 @@ footer {
     letter-spacing: 1.5px;
 }
 
+.box-label--inside {
+    position: absolute;
+    z-index: 100;
+    top: 25px;
+    left: -8px;
+}
+
 .devider-md {
     height: 30px;
     clear: both;
@@ -386,4 +393,58 @@ footer {
 
 body {
     background: #161616;
+}
+
+.about-main {
+    position: relative;
+    min-height: 500px;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-image: url("../images/art3.jpg");
+}
+
+.about-main__capture {
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    background: none;
+    padding: 0;
+    width: 72%;
+    max-width: 72%;
+    letter-spacing: .03em;
+}
+
+.about-main__capture h1 {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 13px;
+    padding: 10px 27px 10px 37px;
+    font-family: Sarala,sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    background-color: rgba(0,0,0,.8);
+    letter-spacing: 2px;
+    color: white;
+}
+
+.about-main__capture h1:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    right: 20px;
+    display: block;
+    height: 5px;
+    background-color: #c80004;
+}
+
+.about-main__capture p {
+    position: relative;
+    display: block;
+    padding: 13px 15px 25px 37px;
+    background-color: rgba(0,0,0,.5);
+    font-family: Play,sans-serif;
+    font-size: 14px;
+    color: white;
 }

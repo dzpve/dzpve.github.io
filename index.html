@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">О СЕРВЕРЕ</a>
+                        <a class="nav-link js-scroll-trigger" href="index.html#about">О СЕРВЕРЕ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="rules.html">ПРАВИЛА</a>
@@ -37,9 +37,9 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#texts">СТАТЬИ</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#links">ССЫЛКИ</a>
-                    </li>
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link js-scroll-trigger" href="#links">ССЫЛКИ</a>-->
+<!--                    </li>-->
                 </ul>
             </div>
         </div>
@@ -60,17 +60,32 @@
     </header>
 
     <div class="devider-md"></div>
-    <div class="container-fluid">
+    <div class="devider-md"></div>
+    <div class="container" id="about">
         <div class="row">
-            <div class="col-12 col-md-9"></div>
-            <div class="col-12 col-md-3">
-                <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-md-9 m-0 p-0">
+                <div class="about-main">
+                    <div class="box-label box-label-md box-label--inside">О СЕРВЕРЕ</div>
+                    <div class="about-main__capture">
+                        <h1>Их тысячи Survival PVE</h1>
+                        <p>Наш сервер хостится на топовом железе, расположеном в одном из лучших ЦОД Европы (Германия). Наш сервер надежно защищен от DDoS-атак и системой очистки траффика.
+                            <br><br>
+                            Уникальной особенностью нашего сервера является хардкорное выживание при наличии большого количества Z. Своя система спавна, новые механики, динамические цены, отсутствие доната, опытная и отзывчивая администрация, собственный модпак - все это делает игру на нашем сервере незабываемой.
+                            <br>
+                            <br>
+                            IP: 144.76.200.251 port: 2302
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 m-0 p-0" id="vk_groups">
+<!--                <div class="row align-items-center justify-content-between">-->
 <!--                    <div class="col-6">МЫ В ВК</div>-->
-                    <div class="col-12 col-md-12 box-label box-label-md"><a class="button text-white" style="font-family: 'Oswald';" href="https://vk.com/dzpve">ГРУППА @<i class="fab fa-vk"></i></a></div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-12"  id="vk_groups"></div>
-                </div>
+<!--                    <div class="col-12 col-md-12 box-label box-label-md"><a class="button text-white" style="font-family: 'Oswald';" href="https://vk.com/dzpve">ГРУППА @<i class="fab fa-vk"></i></a></div>-->
+<!--                </div>-->
+<!--                <div class="row align-items-center justify-content-between">-->
+<!--                <div class="col-12 col-md-12"  id="vk_groups"></div>-->
+<!--                </div>-->
             </div>
         </div>
     </div>
@@ -84,7 +99,7 @@
     <!-- VK -->
     <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
     <script type="text/javascript">
-        VK.Widgets.Group("vk_groups", {mode: 4, wide: 1, no_cover: 0, width: "auto", height: "auto", color1: '161616', color2: 'FFFFFF', color3: 'FF0000'}, 171935454);
+        VK.Widgets.Group("vk_groups", {mode: 4, wide: 1, no_cover: 0, width: "auto", height: "500", color1: '161616', color2: 'FFFFFF', color3: 'FF0000'}, 171935454);
     </script>
 </body>
 </html>
