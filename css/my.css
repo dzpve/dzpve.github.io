@@ -116,7 +116,7 @@
     min-height: 20rem;
     padding: 15rem 0;
     background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../images/Medic.png");
-    background-position: top;
+    background-position: top ;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -672,10 +672,14 @@ code {
     font-family: Sarala, sans-serif;
     font-size: 2em;
     display: block;
+    margin-top: 15px;
 }
 
 .article-item .article-item--content {
     padding-left: 30px;
+}
+.article-item p {
+    color: #ffffff;
 }
 
 @media (max-width: 414px) {
