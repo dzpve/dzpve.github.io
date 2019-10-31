@@ -659,3 +659,32 @@ code {
     -webkit-transition: color .3s ease-out;
     transition: color .3s ease-out;
 }
+
+.article-item a {
+    color: white;
+}
+
+.article-item a :hover {
+    color: #615f5f;
+}
+
+.article-item h1 {
+    font-family: Sarala, sans-serif;
+    font-size: 2em;
+    display: block;
+}
+
+.article-item .article-item--content {
+    padding-left: 30px;
+}
+
+@media (max-width: 414px) {
+    .article-item h1 {
+        font-family: Sarala, sans-serif;
+        font-size: 1.7em;
+        display: block;
+    }
+    .article-item .article-item--content {
+        padding-left: 15px;
+    }
+}
