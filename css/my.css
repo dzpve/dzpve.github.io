@@ -6,14 +6,14 @@
 
 #mainNav {
     min-height: 56px;
-    background-color: #ffffff;
+    background-color: #47533e;
 }
 
 #mainNav .navbar-toggler {
     font-size: 80%;
     padding: 0.75rem;
-    color: #64a19d;
-    border: 1px solid #64a19d;
+    color: #ffffff;
+    border: 1px solid #ffffff;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -21,7 +21,7 @@
 }
 
 #mainNav .navbar-brand {
-    color: #161616;
+    color: #ffffff;
     font-weight: 700;
     padding: .9rem 0;
 }
@@ -366,7 +366,7 @@ footer {
 
 .box-label {
     color: #fff;
-    font-family: Sarala,sans-serif;
+    font-family: Play,sans-serif;
     font-weight: 700;
     background-color: #615f5f;
     text-transform: uppercase;
@@ -386,6 +386,10 @@ footer {
     left: -8px;
 }
 
+.box-label--alert {
+    background-color: #c80004;
+}
+
 .devider-md {
     height: 30px;
     clear: both;
@@ -393,6 +397,7 @@ footer {
 
 body {
     background: #161616;
+    font-family: Play, sans-serif;
 }
 
 .about-main {
@@ -447,4 +452,34 @@ body {
     font-family: Play,sans-serif;
     font-size: 14px;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .about-main__capture h1 {
+        padding: 5px 13px 5px 15px;
+        font-size: 24px;
+    }
+    .about-main__capture p {
+        padding: 6px 7px 14px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 411px) {
+    .about-main__capture h1 {
+        padding: 2px 4px 7px 7px;
+        font-size: 17px;
+    }
+    .about-main__capture p {
+        padding: 3px 4px 7px 7px;
+        font-size: 12px;
+    }
+}
+
+code {
+    display: inline-block;
+    background-color: #47533e;
+    color: #c80004;
+    margin: 0 0 13px;
+    padding: 10px 14px 24px 30px;
 }
