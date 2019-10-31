@@ -551,3 +551,32 @@ code {
     color: white;
 }
 
+.footer-info {
+    padding: 50px 10px 27px;
+    background-color: #000;
+}
+
+.footer-info__logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer-info__links {
+    padding-top: 30px;
+    border-top: 1px solid #272727;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    font-family: Play,sans-serif;
+    font-size: 12px;
+    color: #888787;
+}
+
