@@ -691,4 +691,8 @@ code {
     .article-item .article-item--content {
         padding-left: 15px;
     }
+
+    table {
+        font-size: .5em;
+    }
 }
