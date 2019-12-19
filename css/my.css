@@ -104,6 +104,18 @@
     background-attachment: scroll;
     background-size: cover;
 }
+.rulesenochhead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 20rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../images/art4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
 .mahead {
     position: relative;
     width: 100%;
@@ -136,6 +148,16 @@
     -webkit-background-clip: text;
 }
 
+.rulesenochhead h1 {
+    font-family: 'Varela Round';
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 .mahead h1 {
     font-family: 'Varela Round';
     font-size: 2.5rem;
@@ -156,6 +178,11 @@
     font-size: 1rem;
 }
 
+.rulesenochhead h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+}
+
 .mahead h2 {
     max-width: 20rem;
     font-size: 1rem;
@@ -167,6 +194,10 @@
         line-height: 4rem;
     }
     .ruleshead h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    .rulesenochhead h1 {
         font-size: 4rem;
         line-height: 4rem;
     }
@@ -196,6 +227,20 @@
         letter-spacing: 0.8rem;
     }
     .ruleshead h2 {
+        max-width: 30rem;
+        font-size: 1.25rem;
+    }
+
+    .rulesenochhead {
+        height: 25rem;
+        padding: 0;
+    }
+    .rulesenochhead h1 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.8rem;
+    }
+    .rulesenochhead h2 {
         max-width: 30rem;
         font-size: 1.25rem;
     }
