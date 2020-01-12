@@ -471,6 +471,60 @@ body {
     color: white;
 }
 
+.about-server {
+    position: relative;
+    min-height: 500px;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-image: url("../images/1000server2.png");
+}
+
+.about-server__capture {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background: none;
+    padding: 0;
+    width: 85%;
+    max-width: 85%;
+    letter-spacing: .03em;
+}
+
+.about-server__capture h1 {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 13px;
+    padding: 10px 27px 10px 37px;
+    font-family: Sarala,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgba(0,0,0,.8);
+    letter-spacing: 2px;
+    color: white;
+}
+
+.about-server__capture h1:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    right: 20px;
+    display: block;
+    height: 5px;
+    background-color: #c80004;
+}
+
+.about-server__capture p {
+    position: relative;
+    display: block;
+    padding: 13px 15px 25px 37px;
+    background-color: rgba(0,0,0,.5);
+    font-family: Play,sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
 @media (max-width: 768px) {
     .about-main__capture h1 {
         padding: 5px 13px 5px 15px;
@@ -479,6 +533,14 @@ body {
     .about-main__capture p {
         padding: 6px 7px 14px 15px;
         font-size: 14px;
+    }
+    .about-server__capture h1 {
+        padding: 5px 13px 5px 15px;
+        font-size: 20px;
+    }
+    .about-server__capture p {
+        padding: 6px 7px 14px 15px;
+        font-size: 12px;
     }
 }
 
@@ -490,6 +552,14 @@ body {
     .about-main__capture p {
         padding: 3px 4px 7px 7px;
         font-size: 12px;
+    }
+    .about-server__capture h1 {
+        padding: 2px 4px 7px 7px;
+        font-size: 14px;
+    }
+    .about-server__capture p {
+        padding: 3px 4px 7px 7px;
+        font-size: 10px;
     }
 }
 
